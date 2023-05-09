@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<!--head部分-->
+<head th:include="layout :: htmlhead" th:with="title='蜂巢论坛后台管理'">
+
+
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <!--头-->
+    <div th:replace="fragments/head :: header"></div>
+
+    <!--主体区域-->
+    <div class="layui-body">
+        <div class="layui-container">
+            <div class="layui-row">
+                <div class="layui-col-xs9">
+                    &nbsp;
+
+                    <p style="line-height:2.0;font-size:18px;"><shiro:principal property="sysUserName"></shiro:principal>，欢迎登录
+                        <span style="font-weight: bold;">蜂巢论坛后台管理系统</span></a></p>
+                    当前时间：<span id="d"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var nowTime ;
+        function play(){
+        var time = new Date();
+        nowTime = time.getFullYear()+"年"+time.getMonth()+"月"+time.getDate()+"日"+time.getHours()+"时"+time.getMinutes()+"分"+time.getSeconds()+"秒";
+        document.getElementById("d").innerHTML = nowTime;
+        }
+        setInterval(play,1000);//每一秒执行一次
+    </script>
+
+    <!--底部-->
+    <div th:replace="fragments/footer :: footer"></div>
+</div>
+</body>
+</html>

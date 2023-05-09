@@ -1,0 +1,11 @@
+{
+    "version": "v1.0.1",
+    "homePage": "PAGE/home.html",
+    "server": "Windows",
+    "dataBase": "5.6.51 MySQL Community Server (GPL)",
+    "maxUpload": "http://localhost:8043/",
+    "userRights": "管理员",
+    "port": "8043",
+    "version": "v1.0.1"
+
+}

@@ -1,7 +1,7 @@
 package com.haiyu;
 
-import com.haiyu.manager.ManagerApplication;
-import com.haiyu.manager.dao.BaseAdminUserMapper;
+import com.bee.manager.ManagerApplication;
+import com.bee.manager.dao.BaseAdminUserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

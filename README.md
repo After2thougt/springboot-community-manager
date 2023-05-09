@@ -1,12 +1,5 @@
-# SpringBoot+Layui后台管理系统
-## 后端：
-SpringBoot  2.1.0  
-tk.mybatis  2.0.2  
-Shiro  1.3.1  
-Lombok 1.18.4  
-## 前端：
-Layui  2.4.5  
-JQuery  3.3.1
+# 工程简介
+本项目是一个BBS 论坛管理系统，系统包含前台论坛和后台管理两部分功能。
+其中前台用户可以发布帖文、评论、点赞、文件上传等操作，后台管理员可以对用户和帖子进行管理。
 
-## 渲染模板
-Thymeleaf
+主要技术：SpringBoot、SpringMVC、Mybatis、Thymeleaf、MySQL、JQuery、Shiro、Layui
